@@ -6,7 +6,7 @@ import copy from './download (3).png'
 function App() {
   const symbols = '~`!@#$%^&*()_-=+{[}]|:;"<,>.?/';
   const [password , setPassword] = useState('')
-  const [passwordLength , setpasswordLength] = useState(10)
+  const [passwordLength , setpasswordLength] = useState(20)
   const [checkCount  , setcheckCount] = useState()
   const [innerText , setInnerText] = useState('')
   const [active , setActive] = useState(false)
