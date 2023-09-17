@@ -1,33 +1,7 @@
 
 
-*{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.name{
-  font-size: 100px;
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-}
-
-.name::after{
-  content:  " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 90%;
-  background-color: blue;
-  transform: scaleX(1);
-  z-index: -1;
-  transition: transform 0.3s ease;
-  transform-origin: left;
-}
-
-.name:hover::after{
-  transform: scaleX(0);
-  transform-origin: right;
 }
