@@ -155,8 +155,8 @@ function App() {
 
   return (
     <div >
-      <div className="container1">
-        <h1 className="text-2xl">PASSWORD GENERATOR</h1>
+      <div className="container">
+        <h1 className="">PASSWORD GENERATOR</h1>
         <div className="display-container ">
           <input readOnly placeholder="Password" className="display" value={password} />
           <button className="copyBtn" onClick={copyContent}>
