@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import copy from './download (3).png'
-
+import { IoCopyOutline } from "react-icons/io5";
 
 function App() {
   const symbols = '~`!@#$%^&*()_-=+{[}]|:;"<,>.?/';
@@ -156,12 +155,12 @@ function App() {
   return (
     <div >
       <div className="container">
-        <h1 className="">PASSWORD GENERATOR</h1>
+        <h1 className="text-2xl">PASSWORD GENERATOR</h1>
         <div className="display-container ">
           <input readOnly placeholder="Password" className="display" value={password} />
           <button className="copyBtn" onClick={copyContent}>
             <span className={`tooltip ${active ? 'active' : ''}`}>{innerText}</span>
-            <img src={copy} alt="copy" className="pic" />
+            <IoCopyOutline className='text-white'/>
           </button>
         </div>
 
